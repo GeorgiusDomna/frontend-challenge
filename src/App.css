@@ -1,0 +1,80 @@
+.App {
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 31px;
+  text-align: center;
+  background-color: #FFFFFF
+}
+
+.navbar {
+  display: flex;
+  padding-left: 62px;
+  background-color:#2196F3;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+}
+.navbar_item {
+  padding: 23px;
+  color: #FFFFFF;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.active {
+  background-color: #1E88E5;
+  opacity: 1;
+}
+
+.labary {
+  display: flex;
+  min-height: 500px;
+  margin: 50px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.labery_item {
+  position: relative;
+  width: 225px;
+  transition: 0.2s;
+}
+.labery_item:hover {
+  transform: scale(1.1, 1.1);
+  filter: drop-shadow(1px 7px 6px rgba(0, 0, 0, 0.5));
+}
+.labery_item:hover .favorite_btn {
+  display: block;
+}
+.labery_item img{
+  width: 100%;
+  height: auto;
+}
+
+
+.favorite_btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+  background-image: url(./assets/favorite.svg);
+  background-size: 40px;
+}
+.favorite_active {
+  background-image: url(./assets/favorite_active.svg);
+}
+.favorite_btn:hover {
+  background-image: url(./assets/favorite_hover.svg);
+}
+.active_img {
+  background-image: url(./assets/favorite_active.svg);
+}
+
+.pagination_btn {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.pagination_btn:hover {
+  opacity: 0.7;
+}
